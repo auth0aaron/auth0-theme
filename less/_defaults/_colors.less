@@ -1,9 +1,22 @@
 // Colour definitions
 // --------------------------------------------------
-@blue: #36CDE8;
-@blueDark: #263944;
-@grey: #9096A0;
-@greyDark: #4D4D4D;
+
+@orange: #ff4f40;
+@indigo: #635dff;
+@white: #fff;
+@aluminumLight: #eaecee;
+@aluminumSuperLight: #e2e4e6;
+@aluminum: #bdc4cf;
+@aluminumDark: #2a2e35;
+@black: #000;
+@yellow: #ebca40;
+@mandarine: #ff7f38;
+@pink: #ff44dd;
+@blue: #3885ff;
+@aqua: #3ec6eb;
+@emerald: #1bc99f;
+@greyLight: #f4f7f9;
+
 
 // These variables are used to change the colour of text
 // Primary use is for altering the text colour over a background image
@@ -19,22 +32,22 @@
 
 // Body, link, and heading colour
 // --------------------------------------------------
-@font-color: @greyDark;
+@font-color: @aluminumDark;
 @font-color-inverted: @white;
 
-@link: @font-color;
+@link: @indigo;
 @link-inverted: @font-color-inverted;
 
-@link-hover: @link;
+@link-hover: darken(@link, 10%);
 @link-inverted-hover: @link-inverted;
 
-@heading-color: @blue;
+@heading-color: @aluminumDark;
 @heading-color-inverted: @white;
 
 // Items - components
 // --------------------------------------------------
-@item-color: @blue;
-@item-color-inverted: @white;
+@item-color: @aluminumSuperLight;
+@item-color-inverted: @aluminumDark;
 
 @item-color-hover: darken(@item-color, 10%);
 @item-color-inverted-hover: @item-color-inverted;
@@ -49,7 +62,7 @@
 
 // Buttons
 // --------------------------------------------------
-@btn-color: @greyDark;
+@btn-color: @indigo;
 @btn-color-inverted: @white;
 
 @btn-color-hover: darken(@btn-color, 10%);
@@ -78,9 +91,9 @@
 
 // Progress
 // --------------------------------------------------
-@progress: @grey;
+@progress: @emerald;
 @progress-inverted: @white;
-@progress-border: @grey;
+@progress-border: @aluminum;
 
 // Menu
 // --------------------------------------------------
@@ -100,11 +113,11 @@
 
 // Navigation
 // --------------------------------------------------
-@nav: @white;
-@nav-inverted: @grey;
+@nav: @greyLight;
+@nav-inverted: @aluminumDark;
 
-@nav-icon: @nav-inverted;
-@nav-icon-inverted: @nav;
+@nav-icon: @nav;
+@nav-icon-inverted: @nav-inverted;
 
 @nav-icon-hover: darken(@nav-icon, 10%);
 @nav-icon-inverted-hover: @nav-icon-inverted;
@@ -140,7 +153,7 @@
 
 // Drawer
 // --------------------------------------------------
-@drawer: @blueDark;
+@drawer: @aluminumDark;
 @drawer-inverted: @white;
 
 @drawer-link: @drawer-inverted;
